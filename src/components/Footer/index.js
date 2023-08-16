@@ -15,6 +15,10 @@ function Footer() {
             name: 'linkedin',
             link: 'https://www.linkedin.com/in/sachi-undefined-06a01b243/'
             },
+            {
+            name: 'stack-overflow',
+            link: 'https://stackoverflow.com/users/22385744/kaleikautakaoka'
+            },
 
         ]
 
