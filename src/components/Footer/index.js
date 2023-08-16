@@ -5,7 +5,7 @@ function Footer() {
         const icons = [
             {
                 name: 'Blog Spot',
-                description: 'Blog app that allows users to create, update, and delete blog posts. Created using Node.js, Express.js, Handlebars, Bcrypt, MySQL, and Sequelize.',
+                description: 'Blog app that allows users to create, update, and delete blog posts. Created using Node.js, Express.js, Handlebars, Bcrypt, MySQL, and Sequelize. Deployed using Heroku.',
                 link: 'https://blogspot123-a0dddad8d899.herokuapp.com/',
             },
             {
