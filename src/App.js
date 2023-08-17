@@ -20,7 +20,7 @@ function App() {
             <div className='max-w-screen-2xl mx-auto px-16'>
       <Header>
         <Nav
-          pages={pages}
+          pages={containers}
           setCurrentPage={setCurrentPage}
           currentContent={currentContent}
         ></Nav>
