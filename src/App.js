@@ -6,21 +6,21 @@ import Footer from "./components/Footer";
 
 // name of the page to be displayed
 function App() {
-  const [containers] = useState([
+  const [pages] = useState([
     { name: "about me" },
     { name: "portfolio" },
     { name: "contact" },
     { name: "resume" },
   ]);
 
-  const [currentContent, setCurrentPage] = useState(containers[0]);
+  const [currentContent, setCurrentPage] = useState(pages[0]);
 
   return (
     <div className='w-full h-auto bg-bodyColor text-lighText'>
             <div className='max-w-screen-2xl mx-auto px-16'>
       <Header>
         <Nav
-          pages={containers}
+          pages={pages}
           setCurrentPage={setCurrentPage}
           currentContent={currentContent}
         ></Nav>
