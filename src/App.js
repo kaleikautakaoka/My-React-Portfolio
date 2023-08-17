@@ -1,17 +1,54 @@
-import React, { Component } from 'react';
-// import './App.css';
-import Container from './components/Container/Container';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Page from "./components/Container/Container";
+import Footer from "./components/Footer";
 
+// name of the page to be displayed
+function App() {
+  const [containers] = useState([
+    { name: "about me" },
+    { name: "portfolio" },
+    { name: "contact" },
+    { name: "resume" },
+  ]);
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Container />
-      </div>
-    );
-  }
+  const [currentContent, setCurrentPage] = useState(containers[0]);
+
+  return (
+    <div className='w-full h-auto bg-bodyColor text-lighText'>
+            <div className='max-w-screen-2xl mx-auto px-16'>
+      <Header>
+        <Nav
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentContent={currentContent}
+        ></Nav>
+      </Header>
+      <main>
+        <Page currentContent={currentContent}></Page>
+      </main>
+      <Footer />
+    </div>
+    </div>
+  );
 }
+
+export default App;
+
+// import React, { Component } from 'react';
+// // import './App.css';
+// import Container from './components/Container/Container';
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Container />
+//       </div>
+//     );
+//   }
+// }
 
 // function App() {
 //   return (
@@ -34,4 +71,4 @@ class App extends Component {
 //   );
 // }
 
-export default App;
+// export default App;
