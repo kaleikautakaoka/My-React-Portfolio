@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Project from '../Project';
+import Projects from '../Projects';
 
 function Portfolio() {
     const [projects] = useState([
@@ -58,7 +58,7 @@ function Portfolio() {
         <div>
           <div className="flex-row">
             {projects.map((project, idx) => (
-              <Project
+              <Projects
                 project={project}
                 key={"project" + idx}
               />
@@ -67,3 +67,5 @@ function Portfolio() {
         </div>
       );
 }
+
+export default Portfolio;

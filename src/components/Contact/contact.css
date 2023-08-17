@@ -34,4 +34,22 @@
     border-bottom: 2px solid #ff0000;
 }
 
+.textArea{
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #5e5a5a;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #554e4e;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.textArea:focus{
+    border-bottom: 2px solid #ff0000;
+}
 

@@ -89,7 +89,7 @@ function Contact() {
           type="submit"
           className="Submit"
           value="Submit"
-          onClick={handleFormSubmit}
+          onClick={handleSubmit}
         ></input>
           </form>
         </section>
