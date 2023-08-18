@@ -64,7 +64,7 @@ function Contact() {
             <div>
               <label htmlFor="email">Email address:</label>
               <input data-testid="email"
-              value={email}
+              defaultValue={email}
                 type="email"
                 name="email"
                 onBlur={handleChange}
@@ -73,27 +73,32 @@ function Contact() {
             <div>
               <label htmlFor="message">Message:</label>
               <textarea data-testid="message"
-                value={message}
+              defaultValue={message}
+              type="text"
                 name="message"
                 rows="5"
                 onBlur={handleChange}
               />
             </div>
-            {errorMessage && (
-              <div>
-                <p className="error-text">{errorMessage}</p>
-              </div>
-            )}
-               <input
-          data-testid="submitButton"
-          type="submit"
-          className="Submit"
-          value="Submit"
-          onClick={handleSubmit}
-        ></input>
-          </form>
-        </section>
-      );
-    }
+            <div>
+          <label htmlFor="message">Message:</label>
+          <textarea
+            name="message"
+            rows="5"
+            defaultValue={message}
+            onBlur={handleChange}
+          />
+        </div>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  );
+}
+          
     
     export default Contact;

@@ -6,13 +6,13 @@ function Nav(props) {
     const {
         pages = [],
         setCurrentPage,
-        currentPage,
+        currentContent,
     } = props;
 
     useEffect(() => {
-        document.title = capitalizeFirstLetter(currentPage.name);
+        document.title = capitalizeFirstLetter(currentContent.name);
     }, 
-    [currentPage]);
+    [currentContent]);
 
     return (
         <nav>
@@ -20,7 +20,7 @@ function Nav(props) {
                 {pages.map((Page) => (
                     <li
                         className={`mx-1 ${
-                            currentPage.name === Page.name && 'navActive'
+                            currentContent.name === Page.name && 'navActive'
                             }`}
                         key={Page.name}
                     >

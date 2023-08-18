@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import Page from "./components/Container/Container";
+import Container from "./components/Container/Container";
 import Footer from "./components/Footer";
 
 // name of the page to be displayed
@@ -26,7 +26,7 @@ function App() {
         ></Nav>
       </Header>
       <main>
-        <Page currentContent={currentContent}></Page>
+        <Container currentContent={currentContent}></Container>
       </main>
       <Footer />
     </div>
