@@ -8,20 +8,19 @@ function Projects({ project }) {
         name,
         description,
         link,
-        github
     } = project;
 
     return (
         <div className="project" key={name}>
         <img
-          src={require(`../../assets/cover/${name}.jpg`).default}
+          src={`images/${name}.png`}
           alt={rmHC(name)}
           className="project-bg"
         />
         <div className="project-text">
           <h3>
             <a href={link}>{rmHC(name)}</a>{' '}
-            <a href={github}>
+            <a href={link}>
               <i className="fab fa-github"></i>
             </a>
           </h3>
