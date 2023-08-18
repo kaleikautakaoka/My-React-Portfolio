@@ -1,12 +1,12 @@
 import React from 'react';
+import reactPic from '../../assets/reactPic.jpg';
 
 function About() {
   return (
     <section className="my-5">
-      <div className="my-2">
-        <div className="profile-img my-5">
-        <i className="fas fa-user-circle" style={{ fontSize: "96px" }}></i>
-        </div>
+      <div className="about" alt="profile Pic">
+        <img src={reactPic} style={{ width: "80px", height: "80px" }} alt="cover" />
+       
         <p>
         Sachi Takaoka
         </p>

@@ -14,7 +14,7 @@ function Projects({ project }) {
     return (
         <div className="project" key={name}>
         <img
-          src={require(`../../assets/projects/${name}.jpg`).default}
+          src={require(`../../assets/cover/${name}.jpg`).default}
           alt={rmHC(name)}
           className="project-bg"
         />

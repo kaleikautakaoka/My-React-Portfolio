@@ -8,38 +8,6 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 import ContainerContent from '../ContainerContent/containerContent';
 
 
-
-// class Container extends PureComponent {
-//    state = {
-//     tabs: ['About', 'Portfolio', 'Contact', 'Resume'],
-//     currentTab: 'About',
-//     };
-//     addTab = (tab) => { 
-//         let tabs = [this.state.tabs];
-
-//         if (tabs.indexOf(tab) === -1) {
-//             tabs.push(tab);
-//         }
-//         this.setState({ tabs, currentTab: tab });
-//     };
-//     removeTab = (tab) => {
-//         let tabs = [this.state.tabs];
-//         let index = tabs.indexOf(tab);
-
-//         if (index !== -1) {
-//             tabs.splice(index, 1);
-//         }
-//         this.setState({ tabs, currentTab: tabs[0] });
-//     };
-
-//     navigationButtons(){
-//         return  <ol id="navBar">
-//                   <li onClick={()=> this.addTab("About")}>About</li>
-//                   <li onClick={()=> this.addTab("Experience")}>Experience</li>
-//                   <li onClick={()=> this.addTab("Work")}>Work</li>
-//                   <li onClick={()=> this.addTab("Contact")}>Contact Me</li>
-//                 </ol>
-//       }
      function Container({ currentContent }) {
 
    const renderPage = () => { 
