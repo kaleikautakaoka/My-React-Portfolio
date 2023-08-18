@@ -1,7 +1,9 @@
 import React from 'react';
+// import portfolioBackground from '../../assets/cover/portfolioBackground.jpg';
 
 function Nav({ currentPage, handlePageChange }) {
   return (
+    <nav class="nav">
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -40,6 +42,7 @@ function Nav({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </nav>
   );
 }
 
